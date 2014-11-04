@@ -1,0 +1,21 @@
+
+If node receives packet
+  -> forward (broadcast)
+  if positive
+    -> if seen count number then dismiss
+    -> ack (broadcast -id)
+    -> note count number
+  if negative 
+    -> nothing additional
+  if jamming
+    -> send
+    -> wait time
+    -> send
+    -> turn off
+
+if initiator
+  -> disseminate
+  -> listen for negative packets & update counter to hear all nodes.
+  -> if cuonter reached limit -> send jammer
+  -> if no acks after time period -> new broadcast with next count
+    

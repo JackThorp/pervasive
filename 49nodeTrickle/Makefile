@@ -1,0 +1,3 @@
+COMPONENT=TrickleAppC
+include $(MAKERULES)
+

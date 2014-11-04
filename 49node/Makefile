@@ -1,0 +1,3 @@
+COMPONENT=DisseminateAppC
+include $(MAKERULES)
+
